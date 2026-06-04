@@ -1,0 +1,39 @@
+import { PROGRAM, NAV_LINKS } from "@/lib/config";
+
+export function Footer() {
+  return (
+    <footer className="px-5 pb-32 md:pb-12 pt-12">
+      <div className="container-max card-soft p-8 md:p-10 text-center"
+        style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--lavender) 70%, white), #fff)" }}>
+        <div className="flex items-center justify-center gap-2 font-display font-extrabold text-xl text-ink">
+          <span className="grid place-items-center w-9 h-9 rounded-2xl text-white"
+            style={{ background: "linear-gradient(135deg, var(--purple), var(--purple-deep))" }}>⌘</span>
+          {PROGRAM.shortName}
+        </div>
+        <p className="mt-3 font-bold text-ink/70">{PROGRAM.name}</p>
+        <p className="mt-1 text-sm font-semibold text-ink/55">
+          {PROGRAM.mode} · {PROGRAM.startDate} – {PROGRAM.endDate} · {PROGRAM.sessions}
+        </p>
+
+        <nav className="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-2">
+          {NAV_LINKS.map((l) => (
+            <a key={l.href} href={l.href} className="text-sm font-bold text-ink/60 hover:text-purple">
+              {l.label}
+            </a>
+          ))}
+        </nav>
+
+        <a
+          href={`mailto:${PROGRAM.contactEmail}`}
+          className="mt-4 inline-block text-sm font-bold text-purple hover:underline"
+        >
+          {PROGRAM.contactEmail}
+        </a>
+
+        <p className="mt-6 text-xs font-semibold text-ink/40">
+          © {new Date().getFullYear()} {PROGRAM.shortName}. Made with 💜 for young creators.
+        </p>
+      </div>
+    </footer>
+  );
+}
