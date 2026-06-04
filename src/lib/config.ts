@@ -5,6 +5,8 @@ export const PROGRAM = {
   subtitle: "Learn Python • Build Games • Explore Artificial Intelligence",
   reassurance: "No prior coding experience required",
   mode: "Online",
+  medium: "English",
+  fee: "₹1,000",
   startDate: "14 July 2026",
   endDate: "1 August 2026",
   duration: "3 Weeks",
@@ -26,6 +28,8 @@ export const QUICK_FACTS = [
   { label: "Sessions", value: "15 Live", icon: "video", color: "var(--sky)" },
   { label: "Audience", value: "Grade 8+", icon: "users", color: "var(--purple-deep)" },
   { label: "Level", value: "Beginner", icon: "sparkles", color: "var(--coral)" },
+  { label: "Medium", value: "English", icon: "languages", color: "var(--sky)" },
+  { label: "Fee", value: "₹1,000", icon: "tag", color: "var(--mint)" },
 ];
 
 export const WEEKS = [

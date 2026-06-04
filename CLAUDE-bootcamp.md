@@ -13,8 +13,8 @@ The page should feel playful and inviting (it's for kids), use small, delightful
 - **Program:** AI, Python & Game Development Bootcamp 2026
 - **Tagline:** Build. Create. Innovate.
 - **Mode:** Online
-- **Dates:** 14 July 2026 – 1 August 2026 (3 Weeks)
-- **Schedule:** Tuesday – Saturday · 15 Live Interactive Sessions
+- **Dates:** 20 July 2026 – 14 August 2026 (3 Weeks)
+- **Schedule:** Monday – Friday · 15 Live Interactive Sessions
 - **Audience:** School students, Grade 8 and above · Beginner-friendly
 - **Register link:** `https://pages.razorpay.com/pl_SlBXvS79fu9djn/view`
 
@@ -134,8 +134,8 @@ export const PROGRAM = {
   tagline: "Build. Create. Innovate.",
   subtitle: "Learn Python • Build Games • Explore Artificial Intelligence",
   mode: "Online",
-  startDate: "14 July 2026",
-  endDate: "1 August 2026",
+  startDate: "20 July 2026",
+  endDate: "14 August 2026",
   duration: "3 Weeks",
   schedule: "Tuesday – Saturday",
   sessions: "15 Live Interactive Sessions",

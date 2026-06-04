@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { NAV_LINKS, PROGRAM } from "@/lib/config";
+import pocketlab from "@/assets/pocketlab.png";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,14 +29,15 @@ export function Navbar() {
             : "bg-white/40 backdrop-blur"
         }`}
       >
-        <a href="#top" className="flex items-center gap-2 font-display font-extrabold text-ink">
-          <span className="grid place-items-center w-9 h-9 rounded-2xl text-white text-lg"
-            style={{ background: "linear-gradient(135deg, var(--purple), var(--purple-deep))" }}>
-            ⌘
-          </span>
-          <span className="text-base md:text-lg leading-none">
-            {PROGRAM.shortName}
-          </span>
+        <a href="#top" className="flex items-center font-display font-extrabold text-ink">
+          <Image
+            src={pocketlab}
+            alt="PocketLab logo"
+            width={160}
+            height={56}
+            className="h-12 md:h-14 w-auto object-contain"
+            priority
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-1">

@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { PROGRAM, NAV_LINKS } from "@/lib/config";
+import pocketlab from "@/assets/pocketlab.png";
 
 export function Footer() {
   return (
@@ -6,13 +8,23 @@ export function Footer() {
       <div className="container-max card-soft p-8 md:p-10 text-center"
         style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--lavender) 70%, white), #fff)" }}>
         <div className="flex items-center justify-center gap-2 font-display font-extrabold text-xl text-ink">
-          <span className="grid place-items-center w-9 h-9 rounded-2xl text-white"
-            style={{ background: "linear-gradient(135deg, var(--purple), var(--purple-deep))" }}>⌘</span>
+          <span className="grid place-items-center w-9 h-9 rounded-2xl bg-white shadow-sm overflow-hidden">
+            <Image
+              src={pocketlab}
+              alt="PocketLab logo"
+              width={36}
+              height={36}
+              className="w-full h-full object-contain"
+            />
+          </span>
           {PROGRAM.shortName}
         </div>
         <p className="mt-3 font-bold text-ink/70">{PROGRAM.name}</p>
         <p className="mt-1 text-sm font-semibold text-ink/55">
-          {PROGRAM.mode} · {PROGRAM.startDate} – {PROGRAM.endDate} · {PROGRAM.sessions}
+          {PROGRAM.mode} · {PROGRAM.medium} · {PROGRAM.startDate} – {PROGRAM.endDate} · {PROGRAM.sessions}
+        </p>
+        <p className="mt-1 text-sm font-bold text-purple">
+          Course Fee: {PROGRAM.fee}
         </p>
 
         <nav className="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-2">

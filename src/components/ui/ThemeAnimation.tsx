@@ -2,10 +2,11 @@ import type { ThemeKey } from "@/lib/config";
 
 export function ThemeAnimation({
   theme,
-  size = 96,
+  size,
   className,
 }: {
   theme: ThemeKey;
+  /** Fixed pixel size. Omit and use `className` (e.g. `w-20 h-20`) for responsive sizing. */
   size?: number;
   className?: string;
 }) {
@@ -17,7 +18,7 @@ export function ThemeAnimation({
   return (
     <div
       className={className}
-      style={{ width: size, height: size }}
+      style={size != null ? { width: size, height: size } : undefined}
       role="img"
       aria-label={`${theme} animation`}
     >

@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, Clock, Globe, Sparkles, Sun, Users, Video } from "lucide-react";
+import { Calendar, Clock, Globe, Languages, Sparkles, Sun, Tag, Users, Video } from "lucide-react";
 import { QUICK_FACTS } from "@/lib/config";
 import { RevealGroup, RevealItem } from "./ui/Reveal";
 
@@ -12,12 +12,14 @@ const ICONS: Record<string, typeof Globe> = {
   video: Video,
   users: Users,
   sparkles: Sparkles,
+  languages: Languages,
+  tag: Tag,
 };
 
 export function ProgramInfo() {
   return (
     <section className="px-5 -mt-4">
-      <RevealGroup className="container-max grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 md:gap-4">
+      <RevealGroup className="container-max grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-9 gap-3 md:gap-4">
         {QUICK_FACTS.map((f) => {
           const Icon = ICONS[f.icon] ?? Sparkles;
           return (

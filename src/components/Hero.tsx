@@ -52,9 +52,19 @@ export function Hero() {
           {PROGRAM.subtitle}
         </motion.p>
 
-        <motion.div variants={fadeUp} className="mt-6 inline-flex items-center gap-2 chip"
-          style={{ background: "color-mix(in srgb, var(--mint) 22%, white)", color: "#1d7a52" }}>
-          ✅ {PROGRAM.reassurance}
+        <motion.div variants={fadeUp} className="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <span className="inline-flex items-center gap-2 chip"
+            style={{ background: "color-mix(in srgb, var(--mint) 22%, white)", color: "#1d7a52" }}>
+            ✅ {PROGRAM.reassurance}
+          </span>
+          <span className="inline-flex items-center gap-2 chip"
+            style={{ background: "#fff", color: "var(--purple-deep)", boxShadow: "0 8px 24px -16px rgba(91,63,214,0.6)" }}>
+            💸 Course Fee {PROGRAM.fee}
+          </span>
+          <span className="inline-flex items-center gap-2 chip"
+            style={{ background: "color-mix(in srgb, var(--sky) 22%, white)", color: "#1d5d8a" }}>
+            🗣️ Medium: {PROGRAM.medium}
+          </span>
         </motion.div>
 
         <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center justify-center gap-3">
@@ -77,15 +87,18 @@ export function Hero() {
         </motion.div>
 
         {/* Floating mascots */}
-        <motion.div variants={fadeUp} className="relative mt-14 h-40 md:h-48">
-          <div className="absolute left-[6%] md:left-[16%] top-2 anim-float">
-            <ThemeAnimation theme="python" size={92} />
+        <motion.div
+          variants={fadeUp}
+          className="mt-14 flex items-end justify-center gap-6 sm:gap-12 md:gap-20"
+        >
+          <div className="anim-float">
+            <ThemeAnimation theme="python" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
           </div>
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 anim-float-slow">
-            <ThemeAnimation theme="game" size={120} />
+          <div className="anim-float-slow -mb-2 sm:-mb-3">
+            <ThemeAnimation theme="game" className="w-[88px] h-[88px] sm:w-28 sm:h-28 md:w-32 md:h-32" />
           </div>
-          <div className="absolute right-[6%] md:right-[16%] top-2 anim-float" >
-            <ThemeAnimation theme="ai" size={92} />
+          <div className="anim-float">
+            <ThemeAnimation theme="ai" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
           </div>
         </motion.div>
       </motion.div>
