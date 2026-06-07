@@ -9,7 +9,7 @@ export function RegisterCard() {
         href={PROGRAM.registerUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Register for the bootcamp"
+        aria-label="Register for the workshop"
         className="register-card pointer-events-auto group relative flex items-center justify-center gap-3 md:gap-5 w-full px-5 md:px-8 py-4 font-extrabold text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-purple-soft"
         style={{
           background: "linear-gradient(135deg, var(--purple), var(--purple-deep))",

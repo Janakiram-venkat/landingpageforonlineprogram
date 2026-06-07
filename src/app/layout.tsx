@@ -20,9 +20,9 @@ const body = Nunito({
 
 export const metadata: Metadata = {
   title: `${PROGRAM.name} | ${PROGRAM.tagline}`,
-  description: `${PROGRAM.subtitle}. A ${PROGRAM.duration} beginner-friendly online bootcamp for ${PROGRAM.audience}. ${PROGRAM.reassurance}.`,
+  description: `${PROGRAM.subtitle}. A ${PROGRAM.duration} beginner-friendly online workshop for ${PROGRAM.audience}. ${PROGRAM.reassurance}.`,
   keywords: [
-    "coding bootcamp for kids",
+    "coding workshop for kids",
     "Python for kids",
     "game development for students",
     "AI for students",

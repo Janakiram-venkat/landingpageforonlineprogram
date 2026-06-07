@@ -1,6 +1,6 @@
 export const PROGRAM = {
-  name: "AI, Python & Game Development Bootcamp 2026",
-  shortName: "Bootcamp 2026",
+  name: "AI, Python & Game Development Workshop 2026",
+  shortName: "Workshop 2026",
   tagline: "Build. Create. Innovate.",
   subtitle: "Learn Python • Build Games • Explore Artificial Intelligence",
   reassurance: "No prior coding experience required",

@@ -59,7 +59,7 @@ export function Countdown({ target }: { target: string }) {
   if (ended) {
     return (
       <p className="font-display font-extrabold text-lg text-purple-deep">
-        🎉 The bootcamp has started!
+        🎉 The workshop has started!
       </p>
     );
   }
@@ -67,7 +67,7 @@ export function Countdown({ target }: { target: string }) {
   return (
     <div className="flex flex-col items-center gap-3">
       <p className="text-xs sm:text-sm font-extrabold uppercase tracking-wide text-ink/55">
-        Bootcamp starts in
+        Workshop starts in
       </p>
       <div className="flex items-center gap-2.5 sm:gap-3">
         <Unit value={time.days} label="Days" />
