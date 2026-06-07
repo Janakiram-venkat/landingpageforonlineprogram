@@ -5,6 +5,7 @@ import { PROGRAM } from "@/lib/config";
 import { fadeUp, stagger } from "@/lib/motion";
 import { FloatingShapes } from "./ui/FloatingShapes";
 import { ThemeAnimation } from "./ui/ThemeAnimation";
+import { Countdown } from "./ui/Countdown";
 
 export function Hero() {
   return (
@@ -44,6 +45,14 @@ export function Hero() {
           </span>
         </motion.h1>
 
+        <motion.p
+          variants={fadeUp}
+          className="mt-5 inline-flex items-center gap-2 chip"
+          style={{ background: "color-mix(in srgb, var(--purple) 14%, white)", color: "var(--purple-deep)" }}
+        >
+          🎓 {PROGRAM.audienceShort}
+        </motion.p>
+
         <motion.p variants={fadeUp} className="mt-7 text-lg md:text-2xl font-extrabold font-display text-purple">
           {PROGRAM.tagline}
         </motion.p>
@@ -67,7 +76,20 @@ export function Hero() {
           </span>
         </motion.div>
 
-        <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center justify-center gap-3">
+        <motion.div variants={fadeUp} className="mt-9 flex justify-center">
+          <Countdown target={PROGRAM.startDateISO} />
+        </motion.div>
+
+        <motion.div variants={fadeUp} className="mt-7 flex justify-center">
+          <span
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-extrabold text-sm md:text-base text-white animate-pulse"
+            style={{ background: "linear-gradient(135deg, var(--coral), #e0466b)", boxShadow: "0 12px 30px -12px rgba(224,70,107,0.7)" }}
+          >
+            🔥 Limited Seats Only · Apply Soon!
+          </span>
+        </motion.div>
+
+        <motion.div variants={fadeUp} className="mt-7 flex flex-wrap items-center justify-center gap-3">
           <a
             href={PROGRAM.registerUrl}
             target="_blank"
