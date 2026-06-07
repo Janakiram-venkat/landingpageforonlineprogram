@@ -7,26 +7,29 @@ export const PROGRAM = {
   mode: "Online",
   medium: "English",
   fee: "₹1,000",
-  startDate: "14 July 2026",
-  endDate: "1 August 2026",
+  startDate: "15 July 2026",
+  endDate: "31 July 2026",
   duration: "3 Weeks",
   schedule: "Tuesday – Saturday",
   sessions: "15 Live Interactive Sessions",
-  audience: "School Students (Grade 8 and Above)",
+  time: "7:00 – 8:00 PM IST",
+  audience: "School Students (Grade 6 and Above)",
   level: "Beginner-Friendly",
   registerUrl: "https://pages.razorpay.com/pl_SlBXvS79fu9djn/view",
-  contactEmail: "hello@bootcamp2026.com",
+  contactEmail: "director@stempocketlab.in",
+  contactPhone: "+917893652869",
 };
 
 export type ThemeKey = "python" | "game" | "ai";
 
 export const QUICK_FACTS = [
   { label: "Mode", value: "Online", icon: "globe", color: "var(--purple)" },
-  { label: "Dates", value: "14 Jul – 1 Aug", icon: "calendar", color: "var(--coral)" },
+  { label: "Dates", value: "15 – 31 Jul", icon: "calendar", color: "var(--coral)" },
   { label: "Duration", value: "3 Weeks", icon: "clock", color: "var(--mint)" },
   { label: "Days", value: "Tue – Sat", icon: "sun", color: "var(--sunny)" },
+  { label: "Time", value: "7 – 8 PM IST", icon: "clock", color: "var(--sky)" },
   { label: "Sessions", value: "15 Live", icon: "video", color: "var(--sky)" },
-  { label: "Audience", value: "Grade 8+", icon: "users", color: "var(--purple-deep)" },
+  { label: "Audience", value: "Grade 6+", icon: "users", color: "var(--purple-deep)" },
   { label: "Level", value: "Beginner", icon: "sparkles", color: "var(--coral)" },
   { label: "Medium", value: "English", icon: "languages", color: "var(--sky)" },
   { label: "Fee", value: "₹1,000", icon: "tag", color: "var(--mint)" },
@@ -311,9 +314,16 @@ export const HIGHLIGHTS = [
   "Build a Portfolio",
 ];
 
+export const MENTORS = [
+  { name: "Dr. Vipin Padhinjarath", role: "Resource Person", photo: "person1" },
+  { name: "Dr. Sabeel M Basheer", role: "Resource Person", photo: "person2" },
+  { name: "Janaki Ram", role: "Resource Person", photo: "person3" },
+] as const;
+
 export const NAV_LINKS = [
   { label: "Journey", href: "#journey" },
   { label: "Curriculum", href: "#curriculum" },
   { label: "Projects", href: "#projects" },
+  { label: "Mentors", href: "#mentors" },
   { label: "Why Join", href: "#why" },
 ];

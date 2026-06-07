@@ -23,6 +23,9 @@ export function Footer() {
         <p className="mt-1 text-sm font-semibold text-ink/55">
           {PROGRAM.mode} · {PROGRAM.medium} · {PROGRAM.startDate} – {PROGRAM.endDate} · {PROGRAM.sessions}
         </p>
+        <p className="mt-1 text-sm font-semibold text-ink/55">
+          {PROGRAM.time} · {PROGRAM.audience}
+        </p>
         <p className="mt-1 text-sm font-bold text-purple">
           Course Fee: {PROGRAM.fee}
         </p>
@@ -35,12 +38,20 @@ export function Footer() {
           ))}
         </nav>
 
-        <a
-          href={`mailto:${PROGRAM.contactEmail}`}
-          className="mt-4 inline-block text-sm font-bold text-purple hover:underline"
-        >
-          {PROGRAM.contactEmail}
-        </a>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-1">
+          <a
+            href={`mailto:${PROGRAM.contactEmail}`}
+            className="text-sm font-bold text-purple hover:underline"
+          >
+            {PROGRAM.contactEmail}
+          </a>
+          <a
+            href={`tel:${PROGRAM.contactPhone}`}
+            className="text-sm font-bold text-purple hover:underline"
+          >
+            {PROGRAM.contactPhone}
+          </a>
+        </div>
 
         <p className="mt-6 text-xs font-semibold text-ink/40">
           © {new Date().getFullYear()} {PROGRAM.shortName}. Made with 💜 for young creators.

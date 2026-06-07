@@ -5,6 +5,7 @@ import { LearningJourney } from "@/components/LearningJourney";
 import { Curriculum } from "@/components/Curriculum";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
+import { Mentors } from "@/components/Mentors";
 import { WhyJoin } from "@/components/WhyJoin";
 import { Certification } from "@/components/Certification";
 import { Highlights } from "@/components/Highlights";
@@ -22,6 +23,7 @@ export default function Home() {
         <Curriculum />
         <Projects />
         <Skills />
+        <Mentors />
         <WhyJoin />
         <Certification />
         <Highlights />
